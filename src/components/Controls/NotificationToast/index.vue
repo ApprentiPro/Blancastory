@@ -30,9 +30,16 @@ import {
   onUnmounted,
   PropType
 } from 'vue';
+import {validateArray} from "@/lib/helpers";
+import {
+  NotificationToastInstance,
+  NotificationToastPropContent, NotificationToastPropOnClose, NotificationToastProps,
+  NotificationToastPropType
+} from "@/types/Controls/Notification/toast.ts";
+import {DEFAULT_DURATION, NotifyType} from "@/lib/constants/Controls/notification.ts";
+import {Nullable} from "@/types";
 
 
-import { DEFAULT_DURATION, NotifyType } from '../constants';
 
 export default defineComponent({
   name: 'QNotificationToast',
@@ -47,14 +54,14 @@ export default defineComponent({
      * description text
      */
     content: {
-      type: String as PropType<QNotificationToastPropContent>,
+      type: String as PropType<NotificationToastPropContent>,
       required: true
     },
     /**
      * notification type
      */
     type: {
-      type: String as PropType<QNotificationToastPropType>,
+      type: String as PropType<NotificationToastPropType>,
       default: null,
       validator: validateArray(Object.values(NotifyType))
     },
@@ -76,7 +83,7 @@ export default defineComponent({
      * callback function when closed
      */
     onClose: {
-      type: Function as unknown as PropType<QNotificationToastPropOnClose>,
+      type: Function as unknown as PropType<NotificationToastPropOnClose>,
       default: null
     }
   },
@@ -88,7 +95,7 @@ export default defineComponent({
     'remove'
   ],
 
-  setup(props: QNotificationToastProps, ctx): QNotificationToastInstance {
+  setup(props: NotificationToastProps, ctx): NotificationToastInstance {
     const notificationClasses = computed<Record<string, boolean>>(() => ({
       [`q-notification-toast_type_${props.type}`]: Boolean(props.type)
     }));
