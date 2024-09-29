@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="187ea536-4983-49b7-a178-9f882735550d" name="Changes" comment="feat(init): initialisation du projet">
-      <change afterPath="$PROJECT_DIR$/src/assets/components/Controls/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/Button/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/Notification/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Controls/NotificationToast/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Forms/FormItem/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/TheHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/button.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/skeleton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/switch.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/constants/Controls/notification.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/helpers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/helpers/notNull.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/helpers/randId.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/helpers/validateArray.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/helpers/withInstall.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Controls/Button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Controls/Notification/notification.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Controls/Notification/toast.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Forms/FormItems/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/Forms/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/helpers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="187ea536-4983-49b7-a178-9f882735550d" name="Changes" comment="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +108,7 @@
       <workItem from="1726703599572" duration="12008000" />
       <workItem from="1727169869104" duration="781000" />
       <workItem from="1727369048826" duration="1164000" />
-      <workItem from="1727596746934" duration="3600000" />
+      <workItem from="1727596746934" duration="4645000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init): initialisation du projet">
       <option name="closed" value="true" />
@@ -169,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726706040965</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1727607487741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727607487741</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1727607642814</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727607642814</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(init): initialisation du projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(init): initialisation du projet" />
+    <MESSAGE value="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;" />
   </component>
 </project>
