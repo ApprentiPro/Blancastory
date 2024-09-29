@@ -1,0 +1,195 @@
+@keyframes custom-button-icon-rotating {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.custom-button {
+    --box-shadow-default: 4px 4px 8px rgb(var(--color-rgb-blue) / 40%),
+    1px 1px 3px rgb(var(--color-rgb-blue) / 40%);
+    --box-shadow-pressed: 1px 1px 3px rgb(var(--color-rgb-blue) / 40%);
+    --color-rgb-gray: 29 29 27;
+    --button-main-bg: transparent;
+    --icon-size: 24px;
+    --border-width: 1px;
+
+    display: inline-block;
+    flex-shrink: 0;
+    padding: calc(12.5px - var(--border-width)) 40px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background: var(--button-main-bg);
+    border: var(--border-width) solid transparent;
+    border-radius: var(--border-radius-base);
+    outline: none;
+    box-shadow: var(--box-shadow-default);
+    appearance: none;
+
+    & + & {
+        margin-left: 16px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__spinner-icon {
+        position: absolute;
+        top: calc(50% - var(--icon-size) / 2);
+        left: calc(50% - var(--icon-size) / 2);
+        font-size: var(--icon-size);
+        transform-origin: calc(var(--icon-size) / 2);
+        animation: custom-button-icon-rotating 2s linear infinite;
+    }
+
+    &_theme {
+        &_primary {
+            --button-active-color: rgb(var(--color-rgb-white) / 64%);
+            --button-hover-active-bg: var(--color-primary);
+            --button-main-bg: var(--gradient-primary);
+            --button-hover-color: var(--color-tertiary-white);
+            /* stylelint-disable length-zero-no-unit */
+            --border-width: 0px;
+
+            color: var(--color-tertiary-white);
+
+            &.focus-visible {
+                background: var(--color-primary-darker);
+            }
+        }
+
+        &_secondary {
+            --button-active-color: var(--color-primary-darker);
+            --button-hover-active-bg: var(--color-tertiary-gray);
+            --button-main-bg: var(--color-tertiary-gray-light);
+            --button-hover-color: var(--color-primary);
+
+            color: var(--color-primary);
+
+            &.focus-visible {
+                border-color: var(--color-primary);
+
+                &:active {
+                    border-color: var(--color-primary-darker);
+                }
+            }
+        }
+
+        &_link {
+            --button-active-color: var(--color-primary);
+            --button-hover-color: rgb(var(--color-rgb-gray) / 96%);
+
+            padding: 0;
+            font-size: 14px;
+            font-weight: var(--font-weight-base);
+            line-height: 18px;
+            color: var(--color-primary-blue);
+            text-transform: initial;
+            border-radius: var(--border-radius-base);
+            box-shadow: none;
+
+            &.focus-visible {
+                text-decoration: underline;
+
+                &.custom-button_type_icon {
+                    text-decoration: underline;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+
+    &:not(&.custom-button_loading, &.custom-button_disabled) {
+        &:hover,
+        &:active {
+            background: var(--button-hover-active-bg);
+        }
+
+        &:hover {
+            color: var(--button-hover-color);
+        }
+
+        &:active {
+            color: var(--button-active-color);
+
+            &:not(&.custom-button_theme_link) {
+                box-shadow: var(--box-shadow-pressed);
+            }
+        }
+    }
+
+    &_type_icon {
+        width: 40px;
+        height: 40px;
+        padding: calc(8px - var(--border-width)) 7px;
+        font-size: var(--icon-size);
+    }
+
+    &_disabled {
+        color: rgb(var(--color-rgb-gray) / 64%);
+        cursor: not-allowed;
+
+        &:not(&.custom-button_theme_link) {
+            background: var(--color-tertiary-gray);
+            box-shadow: var(--box-shadow-pressed);
+        }
+    }
+
+    &_loading {
+        position: relative;
+        cursor: progress;
+        background: var(--button-main-bg);
+
+        &:not(&.custom-button_theme_link) {
+            color: var(--button-active-color);
+            box-shadow: var(--box-shadow-default);
+        }
+
+        &.custom-button_theme_link {
+            color: var(--color-primary-blue);
+        }
+
+        .custom-button__inner {
+            visibility: hidden;
+        }
+    }
+
+    &_circle {
+        border-radius: 50%;
+    }
+
+    &_size_small {
+        --icon-size: 16px;
+
+        padding: calc(8px - var(--border-width)) 20px;
+        font-size: 10px;
+        line-height: 12px;
+
+        &.custom-button_type_icon {
+            width: 24px;
+            height: 24px;
+            padding: calc(4px - var(--border-width)) 3px;
+        }
+
+        &.custom-button_theme_link {
+            padding: 0;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+    }
+
+    &_full-width {
+        width: 100%;
+    }
+}
