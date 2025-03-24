@@ -1,18 +1,36 @@
 <script setup lang="ts">
 
-import Button from "@/components/Controls/Button/index.vue";
+import {QInput} from "@qvant/qui-max";
 </script>
 
 <template>
-  <header class="h-20 px-5 flex items-center justify-between ">
-    <div class="h-16 w-16 rounded-full shadow-2 flex items-center bg-white justify-center">
-      <div class="h-12 w-12 rounded-full  shadow-inner bg-white ">
-
-      </div>
+  <header class="h-20 px-5 grid grid-cols-4 gap-x-5">
+    <q-button
+        type="icon"
+        theme="secondary"
+        class="!w-20 !h-20 !border !border-gray-300"
+    >
+      <img src="/static/images/logo_svg.svg" alt="This is the logo svg version for the alternative blancostory application">
+    </q-button>
+    <div class="col-span-2 self-center">
+      <q-input placeholder="search element"/>
     </div>
-
-    <div class="flex items-center gap-x-4">
-      <Button theme="primary" > Click Me</Button>
+    <div class="flex items-center justify-self-end  gap-x-4">
+      <q-button
+          type="icon"
+          theme="secondary"
+          icon="q-icon-bell"
+      />
+      <q-button
+          type="icon"
+          theme="secondary"
+          icon="q-icon-comment"
+      />
+      <q-button
+          type="icon"
+          theme="secondary"
+          icon="q-icon-user"
+      />
     </div>
 
   </header>

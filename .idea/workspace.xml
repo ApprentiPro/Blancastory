@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="187ea536-4983-49b7-a178-9f882735550d" name="Changes" comment="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;" />
+    <list default="true" id="187ea536-4983-49b7-a178-9f882735550d" name="Changes" comment="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/src/components/Layout/TheFooter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/apps/FountainPreview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/AppLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/scenarioView/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/components/Controls/Button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/variables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Controls/Button/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Controls/Notification/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Controls/NotificationToast/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms/FormItem/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/constants/Controls/notification.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Controls/Button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Controls/Notification/notification.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Controls/Notification/toast.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Forms/FormItems/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/Forms/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/helpers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +45,8 @@
         <option value="Dockerfile" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -35,30 +64,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "H:/__WorkSpace/Personal/VueProject/Blancastory/src/types",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "ts.external.directory.path": "H:\\__WorkSpace\\Personal\\VueProject\\Blancastory\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;H:/__WorkSpace/Personal/VueProject/Blancastory/src/lib/constants&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;H:\\__WorkSpace\\Personal\\VueProject\\Blancastory\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\__WorkSpace\Personal\VueProject\Blancastory\src\lib\constants" />
       <recent name="H:\__WorkSpace\Personal\VueProject\Blancastory\src\types" />
       <recent name="H:\__WorkSpace\Personal\VueProject\Blancastory\src\lib" />
     </key>
@@ -108,7 +138,15 @@
       <workItem from="1726703599572" duration="12008000" />
       <workItem from="1727169869104" duration="781000" />
       <workItem from="1727369048826" duration="1164000" />
-      <workItem from="1727596746934" duration="4645000" />
+      <workItem from="1727596746934" duration="16542000" />
+      <workItem from="1728329288235" duration="4836000" />
+      <workItem from="1728416962513" duration="589000" />
+      <workItem from="1728540474451" duration="587000" />
+      <workItem from="1728931886157" duration="589000" />
+      <workItem from="1729079543247" duration="746000" />
+      <workItem from="1729082622203" duration="1201000" />
+      <workItem from="1729179343179" duration="613000" />
+      <workItem from="1742776477223" duration="3913000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init): initialisation du projet">
       <option name="closed" value="true" />
@@ -150,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727607642814</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;">
+      <option name="closed" value="true" />
+      <created>1727607727377</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727607727377</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
