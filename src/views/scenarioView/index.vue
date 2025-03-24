@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import {QButton, QTextarea} from "@qvant/qui-max";
-import {ref} from "vue";
+import {ref,nextTick} from "vue";
 import FountainPreview from "@/components/apps/FountainPreview.vue";
 
 const editor = ref<HTMLTextAreaElement | null>(null);
@@ -26,41 +26,53 @@ const togglePreview = () => {
 };
 
 const insertScene = () => {
-
   const sceneTemplate = `\n\n${sceneType.value} LIEU - JOUR\n`;
-
-  const cursorPosition = editor.value?.selectionStart || 0;
-  const textBefore = fountainRaw.value.slice(0, cursorPosition);
-  const textAfter = fountainRaw.value.slice(cursorPosition);
-  fountainRaw.value = textBefore + sceneTemplate + textAfter;
-  setTimeout(() => {
-    if (editor.value) {
-      const newCursorPosition = cursorPosition + sceneTemplate.length;
-      editor.value.setSelectionRange(newCursorPosition, newCursorPosition);
-      editor.value.focus();
-    }
-  }, 0);
+  insertAtCursor(sceneTemplate)
 };
 
 const insertCharacter = () => {
+  const characterTemplate = `\n\nPERSONNAGE\n`;
+  insertAtCursor(characterTemplate);
 };
 
 const insertAction = () => {
+  const actionTemplate = `\n\n*Action*\n`;
+  insertAtCursor(actionTemplate);
+};
+const insertTransition = () => {
+  const transitionTemplate = `\n\nCUT TO:\n`;
+  insertAtCursor(transitionTemplate);
+};
+
+const insertNote = () => {
+  const noteTemplate = `\n\n[[Note pour l'équipe]]\n`;
+  insertAtCursor(noteTemplate);
+};
+
+const insertPageBreak = () => {
+  const pageBreakTemplate = `\n\n===\n`;
+  insertAtCursor(pageBreakTemplate);
+};
+
+const insertCenteredText = () => {
+  const centeredTextTemplate = `\n\n>Texte centré<\n`;
+  insertAtCursor(centeredTextTemplate);
 };
 
 const insertAtCursor = (template: string) => {
-  const cursorPosition = editor.value?.selectionStart || 0;
+  if (!editor.value) return;
+
+  const cursorPosition = editor.value.selectionStart || 0;
   const textBefore = fountainRaw.value.slice(0, cursorPosition);
   const textAfter = fountainRaw.value.slice(cursorPosition);
   fountainRaw.value = textBefore + template + textAfter;
 
-  setTimeout(() => {
-    if (editor.value) {
-      const newCursorPosition = cursorPosition + template.length;
-      editor.value.setSelectionRange(newCursorPosition, newCursorPosition);
-      editor.value.focus();
-    }
-  }, 0);
+  // Attendre que Vue mette à jour le DO
+  nextTick(() => {
+    const newCursorPosition = cursorPosition + template.length;
+    editor.value!.setSelectionRange(newCursorPosition, newCursorPosition);
+    editor.value!.focus();
+  });
 };
 </script>
 
@@ -78,6 +90,10 @@ const insertAtCursor = (template: string) => {
       <q-button @click="insertScene">Scène</q-button>
       <q-button @click="insertCharacter">Personnage</q-button>
       <q-button @click="insertAction">Action</q-button>
+      <q-button @click="insertTransition">Transition</q-button>
+      <q-button @click="insertNote">Note</q-button>
+      <q-button @click="insertPageBreak">Saut de Page</q-button>
+      <q-button @click="insertCenteredText">Texte Centré</q-button>
       <q-button @click="togglePreview">
         {{ showPreview ? 'Masquer Prévisualisation' : 'Afficher Prévisualisation' }}
       </q-button>
