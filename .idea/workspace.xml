@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="187ea536-4983-49b7-a178-9f882735550d" name="Changes" comment="feat(component &amp; view) : create scene and preview coonfiguration off fountain.js">
+    <list default="true" id="187ea536-4983-49b7-a178-9f882735550d" name="Changes" comment=" feat: implement neumorphic design system and remove qvant dependency&#10;&#10;  - Add complete neumorphic design system with custom CSS classes&#10;  - Remove @qvant/qui-max dependency and replace with native HTML components&#10;  - Implement responsive calendar component with date navigation&#10;  - Create unified neumorphic styling for header, footer and content blocks&#10;  - Add gaming character background and improved UI layout&#10;  - Fix application height to occupy full viewport&#10;  - Replace all q-button and q-input components with custom implementations">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Calendar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.app.tsbuildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.node.tsbuildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/scenarioView/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scenarioView/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/TheFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/apps/FountainPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/apps/FountainPreview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/helpers/withInstall.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/helpers/withInstall.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +45,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ramsesndame237&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ApprentiPro/Blancastory.git&quot;,
+    &quot;accountId&quot;: &quot;074c6b24-cfc4-4698-8b54-dcba63446840&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -42,7 +76,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;H:/__WorkSpace/Personal/VueProject/Blancastory/src/lib/constants&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -85,7 +122,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
       </set>
     </attachedChunks>
   </component>
@@ -120,7 +157,9 @@
       <workItem from="1729079543247" duration="746000" />
       <workItem from="1729082622203" duration="1201000" />
       <workItem from="1729179343179" duration="613000" />
-      <workItem from="1742776477223" duration="5196000" />
+      <workItem from="1742776477223" duration="6039000" />
+      <workItem from="1757713609318" duration="2758000" />
+      <workItem from="1757716657852" duration="12235000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init): initialisation du projet">
       <option name="closed" value="true" />
@@ -178,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742780735090</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add note transaction action personnage and centerredText">
+      <option name="closed" value="true" />
+      <created>1742782191059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742782191059</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +246,8 @@
     <MESSAGE value="feat(init): initialisation du projet" />
     <MESSAGE value="feat(components) : create Button and notification Component&#10;i create notification component and button components i define all the props needed and the neccessary css class to help define the design of those components&#10;Reviewed-by: Ramses ndame &lt;64875585+ramsesndame237@users.noreply.github.com&gt;&#10;Signed-off-by: ramsesndame237 &lt;ramsesndame34@gmail.com&gt;" />
     <MESSAGE value="feat(component &amp; view) : create scene and preview coonfiguration off fountain.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(component &amp; view) : create scene and preview coonfiguration off fountain.js" />
+    <MESSAGE value="feat: add note transaction action personnage and centerredText" />
+    <MESSAGE value=" feat: implement neumorphic design system and remove qvant dependency&#10;&#10;  - Add complete neumorphic design system with custom CSS classes&#10;  - Remove @qvant/qui-max dependency and replace with native HTML components&#10;  - Implement responsive calendar component with date navigation&#10;  - Create unified neumorphic styling for header, footer and content blocks&#10;  - Add gaming character background and improved UI layout&#10;  - Fix application height to occupy full viewport&#10;  - Replace all q-button and q-input components with custom implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value=" feat: implement neumorphic design system and remove qvant dependency&#10;&#10;  - Add complete neumorphic design system with custom CSS classes&#10;  - Remove @qvant/qui-max dependency and replace with native HTML components&#10;  - Implement responsive calendar component with date navigation&#10;  - Create unified neumorphic styling for header, footer and content blocks&#10;  - Add gaming character background and improved UI layout&#10;  - Fix application height to occupy full viewport&#10;  - Replace all q-button and q-input components with custom implementations" />
   </component>
 </project>
